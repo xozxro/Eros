@@ -94,7 +94,7 @@ BASIC SYNTAX<br>
 |<br>
   dynamic string = this is a string with some 8324 numbers and some 3.23 floats<br>
   dynamic stringB = and this is another!<br>
-  print string ++ string : int +_ stringB<br>
+  print string ++ string : int ++ stringB<br>
 | <br>
 |   # outputs 'this is a string with some 8324 numbers and some 3.23 floats 8324 and this is another!'<br>
 | <br>

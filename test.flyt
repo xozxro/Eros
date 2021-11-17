@@ -1,0 +1,7 @@
+new float test = 2.3
+new int test2 = 0
+new bool test3 = True
+
+new [] testArr = test test2 test3
+
+print testArr

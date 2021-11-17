@@ -79,7 +79,7 @@ allowing for more ease in modification and further expirementation by anyone.<br
 |<br>
 |<br>
 ##################################################################################<br>
-#### PRINT<br>
+<h3>PRINT</h3><br>
 | ### basic string and variable output<br>
 |<br>
   print this is a string<br>

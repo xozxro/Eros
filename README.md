@@ -1,7 +1,10 @@
+<h1>EROS EXPIREMENTAL PROGRAMMING LANGUAGE</H1>
 Built by zxro (c) 2021<br>
 <br><br>
+  <b><h4>
 Eros is a simple syntax programming language built with simple Python code, <br>
 allowing for more ease in modification and further expirementation by anyone.<br><br>
+  </b></h4>
 
 <h2>BASIC SYNTAX<br></h2>
 ##################################################################################<br>

@@ -3,9 +3,9 @@ Built by zxro (c) 2021<br>
 Eros is a simple syntax programming language built with simple Python code, <br>
 allowing for more ease in modification and further expirementation by anyone.<br><br>
 
-BASIC SYNTAX<br>
+<h2>BASIC SYNTAX<br></h2>
 ##################################################################################<br>
-#### VARIABLES<br>
+<h3>VARIABLES<br></h3>
 |<br>
 | #########################################<br>
 | ### STRINGS<br>

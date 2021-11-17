@@ -18,8 +18,9 @@ BASIC SYNTAX<br>
 |   # outputs 'this is a string 123 these are ints 456'<br>
 |<br>
 | # STATIC - static strings are string variables that hold retained data from another variable<br>
+| # they can be used just like dynamic variables in all other aspects<br>
 | <br>
-| # they can be used to 'type slice' dynamic variables - extracting only a certain data type out of dynamic strings<br>
+| # they can be used to 'type slice' - extracting only a certain data type out of dynamic strings<br>
 | # in the future this will be modifyable, making it easy for developers to define their own types in order<br>
 | # to quickly handle and filter large amounts of data through a one line type slice.<br>
 |<br>

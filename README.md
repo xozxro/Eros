@@ -7,7 +7,6 @@ allowing for more ease in modification and further expirementation by anyone.<br
   </b></h4>
 
 <h2>BASIC SYNTAX<br></h2>
-##################################################################################<br>
 <h3>VARIABLES<br></h3>
 |<br>
 | #########################################<br>
@@ -81,7 +80,6 @@ allowing for more ease in modification and further expirementation by anyone.<br
   int typeSliceVar;<br>
 |<br>
 |<br>
-##################################################################################<br>
 <h3>PRINT</h3><br>
 | ### basic string and variable output<br>
 |<br>

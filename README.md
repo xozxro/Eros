@@ -58,7 +58,7 @@ The language currently uses a static file for ease in testing, but this will obv
   new [,] arrVar = elem1,elem2,elem3<br>
   new [-] arrVar = elem1- elem2-elem3<br>
   new [] arrVar = [elem1, elem2,elem3]<br>
- <br><br>
+ <br>
  # <b>TYPE CONVERSION</b><br>
  <br>
   static intVar = stringVar : int<br>
@@ -67,7 +67,7 @@ The language currently uses a static file for ease in testing, but this will obv
  #########################################<br>
  ### <b>NUMBERS</b><br>
  <br>
- # <b>INT</b><br>
+ # <b>INT</b>
  <br><br>
   new int newInt = 3<br>
   print newInt<br>
@@ -75,33 +75,31 @@ The language currently uses a static file for ease in testing, but this will obv
    # outputs 3<br>
 <br>
  # <b>FLOAT</b><br>
-<br><br>
+<br>
   new float newFloat = 3.2<br>
   print newFloat <br>
-<br><br>
+<br>
   # outputs 3.2<br>
 <br>
  # <b>TYPE CONVERSION</b><br>
-<br>
  # this will convert typeSliceVar into an integer variable within the programs data array. <br>
  # if typeSliceVar includes multiple numbers spaced apart, this will sum them up and return that value.<br>
 <br><br>
   static typeSliceVar = example : int<br>
   int typeSliceVar;<br><br>
 <br>
-<br>
  #########################################<br>
- ### <b>BOOLEANS</b><br>
+ ### <b>BOOLEANS</b>
 <br><br>
-  new bool isBool = True<br>
+  new bool isBool = True
 <br><br>
  #########################################<br>
  ### <h3><b>PRINT</b></h3><br>
- ### basic string and variable output<br>
+ ### basic string and variable output
 <br><br>
   print this is a string<br>
  <br>
-   # outputs 'this is a string'<br>
+   # outputs 'this is a string'
  <br><br>
   dynamic string = 'xyz'<br>
   print string<br>

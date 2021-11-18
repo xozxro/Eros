@@ -83,11 +83,10 @@ The language currently uses a static file for ease in testing, but this will obv
 <br>
  # <b>TYPE CONVERSION</b><br>
  # this will convert typeSliceVar into an integer variable within the programs data array. <br>
- # if typeSliceVar includes multiple numbers spaced apart, this will sum them up and return that value.<br>
+ # if typeSliceVar includes multiple numbers spaced apart, this will sum them up and return that value.
 <br><br>
   static typeSliceVar = example : int<br>
   int typeSliceVar;<br><br>
-<br>
  #########################################<br>
  ### <b>BOOLEANS</b>
 <br><br>

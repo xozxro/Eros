@@ -9,7 +9,7 @@ The language currently uses a static file for ease in testing, but this will obv
     functions.py to carry out the users commands. The design is currently simple but will evolve soon<br>
     as much more user expandability is added.<br><br>
   Built by zxro (c) 2021<br>
-  <a href='https://twitter.com/xozxro'><twitter.com/xozxro></a><br>
+  <a href='https://twitter.com/xozxro'>twitter.com/xozxro</a><br>
 <br>
   </b></h4>
 

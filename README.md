@@ -10,16 +10,16 @@ allowing for more ease in modification and further expirementation by anyone.<br
 <h3>VARIABLES<br></h3>
 |<br>
 | #########################################<br>
-| ### STRINGS<br>
+| ### <b>STRINGS</b><br>
 | <br>
-| # DYNAMIC - dynamic strings are string variables that can be modified and type sliced after being set<br>
+| # <b>DYNAMIC</b> - dynamic strings are string variables that can be modified and type sliced after being set<br>
 |<br>
   dynamic stringVar = this is a string 123 these are ints 456<br>
   print stringVar<br>
 |<br>
 |   # outputs 'this is a string 123 these are ints 456'<br>
 |<br>
-| # STATIC - static strings are string variables that hold retained data from another variable<br>
+| # <b>STATIC</b> - static strings are string variables that hold retained data from another variable<br>
 | # they can be used just like dynamic variables in all other aspects<br>
 | <br>
 | # they can be used to 'type slice' - extracting only a certain data type out of dynamic strings<br>
@@ -32,7 +32,7 @@ allowing for more ease in modification and further expirementation by anyone.<br
 |   # outputs 123 456<br>
 |<br>
 | #########################################<br>
-| ### ARRAYS<br>
+| ###<b> ARRAYS</b><br>
 |<br>
 | # arrays can be created by segmenting data by any specified token.<br>
 | # place this token in between brackets when creating the array.<br>
@@ -47,31 +47,34 @@ allowing for more ease in modification and further expirementation by anyone.<br
 |  # outputs [1,2,'string']<br>
 | <br>
 | # and this will have the same result...<br>
-  new [,] arrVar = elem1,elem2,elem3<br>
+  new [,] arrVar = elem1, elem2, elem3<br>
 | <br>
-| # TYPE CONVERSION<br>
+| # <b>TYPE CONVERSION</b><br>
 | <br>
   static intVar = stringVar : int<br>
+| # <b>convert intVar into array</b><br>
   new [] intVar;<br>
+| # <b>convert intVar into new array</b><br>
+  new [] intArr = intVar;<br>
 |<br>
 | #########################################<br>
 | ### NUMBERS<br>
 | <br>
-| # INT<br>
+| # <b>INT</b><br>
 | <br>
   new int newInt = 3<br>
   print newInt<br>
 |<br>
 |   # outputs 3<br>
 |<br>
-| # FLOAT<br>
+| # <b>FLOAT</b><br>
 |<br>
   new float newFloat = 3.2<br>
   print newFloat <br>
 |<br>
 |  # outputs 3.2<br>
 |<br>
-| # TYPE CONVERSION<br>
+| # <b>TYPE CONVERSION</b><br>
 |<br>
 | # this will convert typeSliceVar into an integer variable within the programs data array. <br>
 | # if typeSliceVar includes multiple numbers spaced apart, this will sum them up and return that value.<br>

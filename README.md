@@ -10,7 +10,7 @@ allowing for more ease in modification and further expirementation by anyone.<br
 <h3>VARIABLES<br></h3>
 |<br>
 | #########################################<br>
-| ### STRINGS<br>
+| ### <b>STRINGS</b><br>
 | <br>
 | # DYNAMIC - dynamic strings are string variables that can be modified and type sliced after being set<br>
 |<br>
@@ -32,7 +32,7 @@ allowing for more ease in modification and further expirementation by anyone.<br
 |   # outputs 123 456<br>
 |<br>
 | #########################################<br>
-| ### ARRAYS<br>
+| ### <b>ARRAYS</b><br>
 |<br>
 | # arrays can be created by segmenting data by any specified token.<br>
 | # place this token in between brackets when creating the array.<br>
@@ -46,32 +46,34 @@ allowing for more ease in modification and further expirementation by anyone.<br
 |<br>
 |  # outputs [1,2,'string']<br>
 | <br>
-| # and this will have the same result...<br>
+| # and these will have the same result...<br>
   new [,] arrVar = elem1,elem2,elem3<br>
+  new [-] arrVar = elem1- elem2-elem3<br>
+  new [] arrVar = [elem1, elem2,elem3]<br>
 | <br>
-| # TYPE CONVERSION<br>
+| # <b>TYPE CONVERSION</b><br>
 | <br>
   static intVar = stringVar : int<br>
   new [] intVar;<br>
 |<br>
 | #########################################<br>
-| ### NUMBERS<br>
+| ### <b>NUMBERS</b><br>
 | <br>
-| # INT<br>
+| # <b>INT</b><br>
 | <br>
   new int newInt = 3<br>
   print newInt<br>
 |<br>
 |   # outputs 3<br>
 |<br>
-| # FLOAT<br>
+| # <b>FLOAT</b><br>
 |<br>
   new float newFloat = 3.2<br>
   print newFloat <br>
 |<br>
 |  # outputs 3.2<br>
 |<br>
-| # TYPE CONVERSION<br>
+| # <b>TYPE CONVERSION</b><br>
 |<br>
 | # this will convert typeSliceVar into an integer variable within the programs data array. <br>
 | # if typeSliceVar includes multiple numbers spaced apart, this will sum them up and return that value.<br>
@@ -80,7 +82,13 @@ allowing for more ease in modification and further expirementation by anyone.<br
   int typeSliceVar;<br>
 |<br>
 |<br>
-<h3>PRINT</h3><br>
+| #########################################<br>
+| ### <b>BOOLEANS</b><br>
+|
+  new bool isBool = True
+|
+| #########################################<br>
+| ### <h3><b>PRINT</b><br>
 | ### basic string and variable output<br>
 |<br>
   print this is a string<br>

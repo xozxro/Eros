@@ -45,13 +45,13 @@ The language currently uses a static file for ease in testing, but this will obv
  # place this token in between brackets when creating the array.<br>
  # leave blank to segregate by space or place your data in brackets.<br>
  # eg. new [] arr = [x,y,z]<br>
-<br><br>
+<br>
   int elem1 = 1<br>
   int elem2 = 2<br>
   dynamic elem3 = string<br>
   new [] arrVar = elem1 elem2 elem3<br>
   print arrVar<br>
-<br><br>
+<br>
   # outputs [1,2,'string']<br>
  <br>
  # and these will have the same result...<br><br>

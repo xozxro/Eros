@@ -32,7 +32,7 @@ callingFile = True
 if callingFile:
 
     # read lines of file into list
-    with open(r'C:\Users\ivanz\Dropbox\projects\flytlang\test.flyt', 'r', encoding='utf-8') as parseFile:
+    with open(r'T:\projects\SORTED\eros\test.flyt', 'r', encoding='utf-8') as parseFile:
         fileText = [x.strip() for x in parseFile.readlines()]
         parseFile.close()
 

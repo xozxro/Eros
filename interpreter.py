@@ -49,7 +49,7 @@ def createIntepreterSpace(code):
             if lineArr[1].lower() == 'float':
                 varData = functions.makeFloat(varData, line=line.split())
 
-            if lineArr[1].lower() == '[]' or lineArr[1].lower() == 'arr':
+            if '[' in lineArr[1].lower():
                 varData = functions.makeArray(varData, line=line.split())
 
 
@@ -78,7 +78,11 @@ def createIntepreterSpace(code):
 
 
                         returnArr = varData.search(lineArr[0], lineArr[2].lower())
-                        printLst.append(' '.join(returnArr))
+
+                        try:
+                            printLst.append(' '.join(returnArr))
+                        except:
+                            printLst += returnArr
                         continue
                     else:
                         # printing a generic string here
@@ -92,13 +96,19 @@ def createIntepreterSpace(code):
                         printLst.append(' '.join(lineArr))
 
                 else:
-                    printLst.append(str(functions.return_(varData, lineArr[0])))
+                    try:
+                        printLst.append(str(functions.return_(varData, lineArr[0])))
+                    except:
+                        printLst.append(lineArr[0])
 
             if includeSpaces == True:
                 joiner = ' '
             else:
                 joiner = ''
-            totalPrint = joiner.join(printLst)
+            try:
+                totalPrint = ' '.join(printLst)
+            except:
+                totalPrint = returnArr
             print(totalPrint)
     return 'Success intepreting file.'
 

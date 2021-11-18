@@ -32,42 +32,52 @@ class var:
         returnList = []
 
         analyzedStr = self.dataDict[var]
-        analyzedElem = analyzedStr.split()
 
-        if type == 'int':
-            for elem in analyzedElem:
-                try:
-                    int(elem)
-                    returnList.append(elem)
-                except:
-                    try:
-                        int(elem[1:])
-                        returnList.append(elem[1:])
-                    except:
-                        try:
-                            int(elem[:-1])
-                            returnList.append(elem[:-1])
-                        except:
-                            try:
-                                test = elem[:-1]
-                                int(test[1:])
-                                returnList.append(int(test[1:]))
-                            except:
-                                pass
-                    pass
+        # check to see if variable is a list
+        if isinstance(analyzedStr,list):
+            analyzedElem = analyzedStr
+        else:
+            analyzedElem = analyzedStr.split()
 
         if type == 'str' or type == 'string':
 
-            returnList = []
-
-            analyzedStr = self.dataDict[var]
-            analyzedElem = analyzedStr.split()
-
             for elem in analyzedElem:
                 try:
                     int(elem)
                 except:
-                    returnList.append(elem)
+                    try:
+                        float(elem)
+                    except:
+                        if not isinstance(elem,list):
+                            returnList.append(elem)
+
+        else:
+            for elem in analyzedElem:
+
+                if type == 'arr' or type == '[]':
+                    if isinstance(elem, list):
+                        returnList.append(elem)
+                        continue
+                    else:
+                        pass
+
+                try:
+                    if type == 'int':
+                        int(elem)
+                        returnList.append(elem)
+
+                except:
+                    pass
+
+                try:
+                    if type == 'float':
+                        float(elem)
+                        try:
+                            int(elem)
+                        except:
+                            returnList.append(elem)
+                except:
+                    pass
 
         return returnList
 
@@ -183,22 +193,102 @@ def makeFloat(varData,line=[]):
 def makeArray(varData,line=[]):
 
     # new [] test = array bullshit
-    # 1   2  3    4 5 ...
+    # 0   1  2    3 4 5 ...
 
     buildArr = []
 
-    if line[5:][0] == '[':
-        # ill deal with this bvullshit later
-        pass
-    else:
-        for char in line[4:]:
-            if varData.exists(char):
-                buildArr.append(varData.return_(char))
-            else:
-                buildArr.append(char)
+    if len(line) < 4:
+        # here we are trying to type convert
+        splitchar = line[1][1]
+        # no character specified so assumes a space
+        if splitchar == ']': splitchar = ' '
 
+        # retrieve the data within the variable and split by the specified token
+        parseData = varData.return_(line[2][:-1])
+
+        for char in parseData.split(splitchar):
+            buildArr.append(char.strip())
+
+        # append the built array into the data dictionary
+        varData.addArray(line[2], buildArr)
+
+        return varData
+
+    # allow for [x,y,z] syntax
+    if line[4][0] == '[':
+        if len(line[4:]) > 1:
+            arrStr = str(''.join(line[4:])).replace('[','')
+        else:
+            arrStr = str(line[4]).replace('[','')
+        arrData = arrStr.replace(']','')
+
+        splitchar = ','
+
+        for char in arrData.split(splitchar):
+            if varData.exists(char.strip()):
+                buildArr.append(varData.return_(char.strip()))
+            else:
+                buildArr.append(char.strip())
+
+    else:
+        typeConv = False
+        # here we locate the character which we would like to
+        # segment the data into an array by
+        # this will be important as this should be customizable with relative ease
+        # in order to easily segment more complex data into arrays
+        splitchar = line[1][1]
+        # no character specified so assumes a space
+        if splitchar == ']': splitchar = ' '
+
+        # checks to see if there is only one argument remaining
+        if len(line[4:]) > 1 and line[5] != ':':
+            arrData = ' '.join(line[4:])
+        else:
+            arrData = line[4]
+
+            if arrData[-1] == ';':
+                # type converting into a new variable
+                typeConv = True
+                arrData = varData.return_(arrData[:-1])
+            else:
+                typeConv = False
+
+            try:
+                if line[5] == ':':
+                    # we are type slicing one variable into a list
+                    arrData = varData.search(arrData, line[6])
+
+                    if line[6] == 'arr':
+                        typeConv = False
+                    else:
+                        arrData = ' '.join(arrData)
+                        splitchar = ' '
+                    typeConv = False
+                else:
+                    typeConv = False
+            except:
+                pass
+
+
+
+        # iterate through the given data using our specified token
+        # strip spaces off incase they were used alongside the token
+        if isinstance(arrData,list):
+            buildArr = arrData
+        else:
+            scanData = arrData.split(splitchar)
+
+            for char in scanData:
+
+                if typeConv is False and varData.exists(char.strip()):
+                    buildArr.append(varData.return_(char.strip()))
+                else:
+                    buildArr.append(char.strip())
+
+    # append the built array into the data dictionary
     varData.addArray(line[2], buildArr)
 
+    # return the complete dictionary
     return varData
 
 # VARIABLE RETURN FUNCTION

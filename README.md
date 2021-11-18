@@ -7,7 +7,7 @@ The language currently uses a static file for ease in testing, but this will obv
   open any type of file type specified. To run, simply put your code in test.es and run main.py.<br>
   <br> main.py creates an intepreter space using interpreter.py, which goes through the code and uses<br>
     functions.py to carry out the users commands. The design is currently simple but will evolve soon<br>
-    as much more user expandability is added.<br>
+    as much more user expandability is added.<br><br>
   Built by zxro (c) 2021<br>
 <br>
   </b></h4>

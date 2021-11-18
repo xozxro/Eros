@@ -21,7 +21,7 @@ new [] strArr = str;
 new [] strArr = mainArr : str
 
 new [] floatArr = mainArr : float
-new [] intArr = mainArr : in
+new [] intArr = mainArr : int
 new [] arrArr = mainArr : []
 
 print floats...

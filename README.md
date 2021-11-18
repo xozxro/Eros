@@ -41,23 +41,24 @@ The language currently uses a static file for ease in testing, but this will obv
  #########################################<br>
  ### <b>ARRAYS</b><br>
 <br>
- # arrays can be created by segmenting data by any specified token.<br>
+ # arrays can be created via segmenting data by any specified token.<br>
  # place this token in between brackets when creating the array.<br>
- # leave blank to segregate by space<br>
-<br>
+ # leave blank to segregate by space or place your data in brackets.<br>
+ # eg. new [] arr = [x,y,z]<br>
+<br><br>
   int elem1 = 1<br>
   int elem2 = 2<br>
   dynamic elem3 = string<br>
   new [] arrVar = elem1 elem2 elem3<br>
   print arrVar<br>
-<br>
+<br><br>
   # outputs [1,2,'string']<br>
  <br>
- # and these will have the same result...<br>
+ # and these will have the same result...<br><br>
   new [,] arrVar = elem1,elem2,elem3<br>
   new [-] arrVar = elem1- elem2-elem3<br>
   new [] arrVar = [elem1, elem2,elem3]<br>
- <br>
+ <br><br>
  # <b>TYPE CONVERSION</b><br>
  <br>
   static intVar = stringVar : int<br>
@@ -67,41 +68,41 @@ The language currently uses a static file for ease in testing, but this will obv
  ### <b>NUMBERS</b><br>
  <br>
  # <b>INT</b><br>
- <br>
+ <br><br>
   new int newInt = 3<br>
   print newInt<br>
 <br>
    # outputs 3<br>
 <br>
  # <b>FLOAT</b><br>
-<br>
+<br><br>
   new float newFloat = 3.2<br>
   print newFloat <br>
-<br>
+<br><br>
   # outputs 3.2<br>
 <br>
  # <b>TYPE CONVERSION</b><br>
 <br>
  # this will convert typeSliceVar into an integer variable within the programs data array. <br>
  # if typeSliceVar includes multiple numbers spaced apart, this will sum them up and return that value.<br>
-<br>
+<br><br>
   static typeSliceVar = example : int<br>
-  int typeSliceVar;<br>
+  int typeSliceVar;<br><br>
 <br>
 <br>
  #########################################<br>
  ### <b>BOOLEANS</b><br>
-<br>
+<br><br>
   new bool isBool = True<br>
-<br>
+<br><br>
  #########################################<br>
  ### <h3><b>PRINT</b></h3><br>
  ### basic string and variable output<br>
-<br>
+<br><br>
   print this is a string<br>
  <br>
    # outputs 'this is a string'<br>
- <br>
+ <br><br>
   dynamic string = 'xyz'<br>
   print string<br>
 <br>

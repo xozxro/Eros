@@ -84,11 +84,11 @@ allowing for more ease in modification and further expirementation by anyone.<br
 |<br>
 | #########################################<br>
 | ### <b>BOOLEANS</b><br>
-|
-  new bool isBool = True
-|
+|<br>
+  new bool isBool = True<br>
+|<br>
 | #########################################<br>
-| ### <h3><b>PRINT</b><br>
+| ### <h3><b>PRINT</b></h3><br>
 | ### basic string and variable output<br>
 |<br>
   print this is a string<br>

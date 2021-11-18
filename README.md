@@ -6,10 +6,10 @@ Eros is a simple syntax programming language built with simple Python code, <br>
 allowing for more ease in modification and further expirementation by anyone.<br><br>
   <br>
 Currently just have a static file for ease in testing, but this will obviously be changed to <br>
-  open any type of file type specified. To run, simply put your code in test.es and run main.py.<b>
-  <b> main.py creates an intepreter space using interpreter.py, which goes through the code and uses<b>
-    functions.py to carry out the users commands. The design is currently simple but will evolve soon<b>
-    as much more user expandability is added.<b>
+  open any type of file type specified. To run, simply put your code in test.es and run main.py.<br>
+  <br> main.py creates an intepreter space using interpreter.py, which goes through the code and uses<br>
+    functions.py to carry out the users commands. The design is currently simple but will evolve soon<br>
+    as much more user expandability is added.<br>
   </b></h4>
 
 <h2>BASIC SYNTAX<br></h2>

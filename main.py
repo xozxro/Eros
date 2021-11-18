@@ -7,12 +7,11 @@ from interpreter import *
 # EXTERNAL PACKAGES
 import sys
 
-
-
-# WRITTEN BY MICHAEL BENJAMIN 2021
+# WRITTEN BY ZXRO 2021
 # (C) FLYTLABS 2021 FLYTLABS.DEV
+# TWITTER.COM/XOZXRO
 ######################################
-# FLYTLANG IS AN OPEN SOURCE PROGRAMMING LANGUAGE
+# EROS IS AN OPEN SOURCE PROGRAMMING LANGUAGE
 # DEDICATED TO AUTOMATION AND EXPIREMENTAL PROJECTS
 ######################################
 
@@ -20,6 +19,7 @@ import sys
 # args = sys.argv
 
 # DETERMIN IF CALLING A FILE
+# not currently used for ease of testing
 '''
 if os.path.exists(args[1]):
     callingFile = True
@@ -29,10 +29,12 @@ else:
 callingFile = True
 # MAIN RUNTIME
 
+os.chdir(os.getcwd())
+
 if callingFile:
 
     # read lines of file into list
-    with open(r'T:\projects\SORTED\eros\test.es', 'r', encoding='utf-8') as parseFile:
+    with open(r'test.es', 'r', encoding='utf-8') as parseFile:
         fileText = [x.strip() for x in parseFile.readlines()]
         parseFile.close()
 

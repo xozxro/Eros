@@ -92,7 +92,6 @@ The language currently uses a static file for ease in testing, but this will obv
 <br><br>
   new bool isBool = True
 <br><br>
- #########################################<br>
  ### <h3><b>PRINT</b></h3><br>
  ### basic string and variable output
 <br><br>

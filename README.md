@@ -1,6 +1,6 @@
 <h1>EROS EXPIREMENTAL PROGRAMMING LANGUAGE</H1>
   <b><h4>
-Eros is a simple syntax programming language built with simple Python code, <br>
+Eros is a simple syntax programming language built with relatively basic Python code, <br>
 allowing for more ease in modification and further expirementation by anyone.<br>
   <br>
 The language currently uses a static file for ease in testing, but this will obviously be<br> changed to 

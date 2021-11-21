@@ -4,7 +4,7 @@ Eros is a simple syntax programming language built with relatively basic Python 
 allowing for more ease in modification and further expirementation by anyone.<br>
   <br>
 The language currently uses a static file for ease in testing, but this will obviously be<br> changed to 
-  open any file opened through it. To run, simply put your code in test.es and run main.py.<br>
+  open any file executed through it. To run, simply put your code in test.es and run main.py.<br>
   <br> main.py creates an intepreter space using interpreter.py, which goes through the code and uses<br>
     functions.py to carry out the users commands. The design is currently simple but will evolve soon<br>
     as much more user expandability is added.<br><br>

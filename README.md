@@ -1,6 +1,5 @@
 <h1>EROS EXPIREMENTAL PROGRAMMING LANGUAGE</H1>
   <b><h4>  <br>
-  <br>
 
   UPDATE: The readme is a little rough on this one - updating it within the next 24 hrs. Stay tuned.
   <br>  <br>

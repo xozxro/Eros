@@ -1,11 +1,15 @@
 <h1>EROS EXPIREMENTAL PROGRAMMING LANGUAGE</H1>
-  <b><h4>
+  <b><h4>  <br>
+  <br>
+
+  UPDATE: The readme is a little rough on this one - updating it within the next 24 hrs. Stay tuned.
+  <br>  <br>
+
 Eros is a simple syntax programming language built with relatively basic Python code, <br>
 allowing for more ease in modification and further expirementation by anyone.<br>
   <br>
   
-UPDATE: The readme is a little rough on this one - updating it within the next 24 hrs. Stay tuned.
-  <br>
+
 The language currently uses a static file for ease in testing, but this will obviously be<br> changed to 
   open any file executed through it. To run, simply put your code in test.es and run main.py.<br>
   <br> main.py creates an intepreter space using interpreter.py, which goes through the code and uses<br>

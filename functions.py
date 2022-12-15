@@ -192,7 +192,7 @@ def makeFloat(varData,line=[]):
 
 def makeArray(varData,line=[]):
 
-    # new [] test = array bullshit
+    # new [] test = array 
     # 0   1  2    3 4 5 ...
 
     buildArr = []
